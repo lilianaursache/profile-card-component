@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Carlos E Alford @WebShuriken">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Profile card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,21 +15,40 @@
   </style>
 </head>
 <body>
-  Victor Crest
-  26
-  London
+  <main>
 
-  80K
-  Followers
+    <!-- Profile card component -->
+    <section class="p-card">
+      <header class="p-card__header">
+        <img src="./images/image-victor.jpg" class="p-card__profile-img" alt="profile image of victor">
+      </header>
+      <div class="p-card__body">
+        <ul class="p-card__details-list">
+          <li class="p-card__bio-list-item p-card__bio-list-item-name">Victor Crest</li>
+          <li class="p-card__bio-list-item p-card__bio-list-item-age">26</li>
+          <li class="p-card__bio-list-item p-card__bio-list-item-city">London</li>
+        </ul>
+        <ul class="p-card__stats-list">
+          <li class="p-card__stats-list-item">
+            <span class="p-card__stats-list-item--strong">80K</span>
+            <span class="p-card__stats-list-item--soft">Followers</span>
+          </li>
+          <li class="p-card__stats-list-item">
+            <span class="p-card__stats-list-item--strong">803K</span>
+            <span class="p-card__stats-list-item--soft">Likes</span>
+          </li>
+          <li class="p-card__stats-list-item">
+            <span class="p-card__stats-list-item--strong">1.4K</span>
+            <span class="p-card__stats-list-item--soft">Photos</span>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://carlosealford.com/">Carlos E Alford M</a>.
+  </footer>
 </body>
 </html>
