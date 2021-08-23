@@ -12,16 +12,103 @@
   font-size: 18px;
 }
 
-/* profile card component styles */
-.p-card {
-  --page-bg-color: $page-bg-colour;
-  --very-dark-text-color: $very-dark-text-color;
-  --soft-text-color: $soft-text-color;
-  --dark-gray: $dark-gray;
+img {
+  height: auto;
+  width: 100%;
 }
 
+main {
+  padding-top: 146px;
+}
+
+/* profile card component styles */
+.p-card {
+  --card-bg-color: #ffffff;
+  --dark-gray: #969696;
+  --page-bg-color: #19a2ae;
+  --soft-text-color: #6a6f81;
+  --very-dark-text-color: #2d3248;
+  background: var(--card-bg-color);
+  border-radius: 0.8rem;
+  color: var(--very-dark-text-color);
+  height: 374px;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 326px;
+}
+
+.p-card__img-tab {
+  background-image: url("./images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  background-position-x: -12px;
+  height: 140px;
+}
+
+.p-card__header {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 4rem;
+}
+
+.p-card__profile-img {
+  border: 5px solid var(--card-bg-color);
+  border-radius: 4rem;
+  position: absolute;
+  transform: translate(110px, -124px);
+  width: 104px;
+}
+
+.p-card__bio-name {
+  font-size: 18px;
+  padding-right: 0.5rem;
+  text-align: right;
+  width: 64%;
+}
+
+.p-card__bio-age {
+  color: var(--soft-text-color);
+  width: 36%;
+}
+
+.p-card__bio-city {
+  color: var(--soft-text-color);
+  font-size: 14px;
+  padding-top: 0.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.p-card__stats-list {
+  border-top: 1px solid var(--dark-gray);
+  display: flex;
+  margin-top: 24px;
+  padding: 0 1.4rem;
+}
+
+.p-card__stats-list-item {
+  align-items: center;
+  display: inline-flex;
+  flex-flow: column wrap;
+  flex-grow: 1;
+  width: 33.3%;
+}
+
+.p-card__stats-list-item--strong {
+  font-weight: 700;
+  padding-top: 1.3rem;
+}
+
+.p-card__stats-list-item--soft {
+  color: var(--soft-text-color);
+  font-size: 11px;
+  letter-spacing: 1px;
+  padding-top: 0.2rem;
+}
+
+/* footer */
 .attribution {
   font-size: 11px;
+  margin-top: 32px;
   text-align: center;
 }
 .attribution a {
