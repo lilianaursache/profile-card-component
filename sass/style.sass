@@ -17,6 +17,9 @@ $card-bg-color: #ffffff
   font-family: 'Kumbh Sans', sans-serif
   font-size: 18px
 
+body
+  background: $page-bg-colour
+
 img
   height: auto
   width: 100%
@@ -28,11 +31,11 @@ main
 .p-card
   --card-bg-color: #{$card-bg-color}
   --dark-gray: #{$dark-gray}
-  --page-bg-color: #{$page-bg-colour}
   --soft-text-color: #{$soft-text-color}
   --very-dark-text-color: #{$very-dark-text-color}
   background: var(--card-bg-color)
   border-radius: .8rem
+  box-shadow: 0 4px 18px 2px rgba(45, 50, 72, .4), 0 2px 12px 0px rgba(45, 50, 72, .5)
   color: var(--very-dark-text-color)
   height: 374px
   margin: 0 auto

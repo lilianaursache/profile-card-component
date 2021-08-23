@@ -12,6 +12,10 @@
   font-size: 18px;
 }
 
+body {
+  background: #19a2ae;
+}
+
 img {
   height: auto;
   width: 100%;
@@ -25,11 +29,11 @@ main {
 .p-card {
   --card-bg-color: #ffffff;
   --dark-gray: #969696;
-  --page-bg-color: #19a2ae;
   --soft-text-color: #6a6f81;
   --very-dark-text-color: #2d3248;
   background: var(--card-bg-color);
   border-radius: 0.8rem;
+  box-shadow: 0 4px 18px 2px rgba(45, 50, 72, 0.4), 0 2px 12px 0px rgba(45, 50, 72, 0.5);
   color: var(--very-dark-text-color);
   height: 374px;
   margin: 0 auto;
