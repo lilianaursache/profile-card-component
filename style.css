@@ -14,6 +14,10 @@
 
 body {
   background: #19a2ae;
+  background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+  background-position: right 52vw top -284px, left 45vw top 355px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 img {
@@ -116,7 +120,24 @@ main {
   text-align: center;
 }
 .attribution a {
-  color: #3e52a3;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-position: right 50vw top -414px, left 44vw top 340px;
+    background-size: 828px, 828px;
+  }
+}
+@media screen and (min-width: 992px) {
+  body {
+    background-position: right 48vw top -460px, left 44vw top 340px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    background-position: right 48vw top -498px, left 46vw top 378px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
